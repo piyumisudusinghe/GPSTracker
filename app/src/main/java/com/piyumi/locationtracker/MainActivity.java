@@ -44,6 +44,7 @@ public class  MainActivity extends AppCompatActivity {
                     double lon = location.getLongitude();
                     Toast.makeText(getApplicationContext(),"LAT : " + lat + "\n LON : " + lon, Toast.LENGTH_LONG).show();
                 }else{
+
                     Toast.makeText(getApplicationContext(),"Location null piyumi", Toast.LENGTH_LONG).show();
                 }
 
@@ -54,7 +55,7 @@ public class  MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 isPressedStop = true;
-                Toast.makeText(getApplicationContext(),"Stop getting location updates", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Stopped getting location updates", Toast.LENGTH_LONG).show();
 
             }
         });

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E0F2F1">
+
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="411dp"
+        android:layout_below="@+id/btnGetLocation"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

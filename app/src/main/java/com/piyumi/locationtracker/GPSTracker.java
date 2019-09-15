@@ -19,6 +19,8 @@ public class GPSTracker implements LocationListener {
 
     }
 
+
+
     public Location getLocation(){
 
         if(ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ){
@@ -31,7 +33,7 @@ public class GPSTracker implements LocationListener {
 
 
         if(isGPSEnabled){
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,6000,15,this);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,6000, (float) 0.1,this);
 
             if(locationManager != null){
                 Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
