@@ -30,6 +30,7 @@ public class  MainActivity extends AppCompatActivity {
                 Manifest.permission.ACCESS_FINE_LOCATION
         },123);
 
+        //set onclicklistner for start button
         btnGetLocation.setOnClickListener( new View.OnClickListener(){
 
 
@@ -45,12 +46,13 @@ public class  MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"LAT : " + lat + "\n LON : " + lon, Toast.LENGTH_LONG).show();
                 }else{
 
-                    Toast.makeText(getApplicationContext(),"Location null piyumi", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Location is null", Toast.LENGTH_LONG).show();
                 }
 
             }
         });
 
+        //set onclicklistner for stop button
         btnStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
